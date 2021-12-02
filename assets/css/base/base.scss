@@ -28,12 +28,16 @@
   }
 
   body {
-    @apply relative text-18 font-normal;
+    @apply relative font-futura text-24-body font-medium tracking-wider;
     min-height: -webkit-fill-available;
   }
 
   p {
-    @apply font-normal text-18;
+    @apply font-medium text-24-body font-futura tracking-wider;
+  }
+  
+  mark {
+    @apply text-green;
   }
 
   h1,
@@ -42,19 +46,23 @@
   h4,
   h5,
   h6 {
-    @apply font-bold;
+    @apply font-conthrax font-normal;
   }
 
   h1 {
-    @apply text-24 lg:text-36;
+    @apply text-36 lg:text-48;
   }
 
   h2 {
-    @apply text-20 lg:text-28;
+    @apply text-32 lg:text-36;
   }
 
   h3 {
-    @apply text-18 lg:text-24;
+    @apply text-20 lg:text-32;
+  }
+
+  h4 {
+    @apply text-18;
   }
 
   select {
