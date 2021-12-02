@@ -1,7 +1,7 @@
 <template>
-  <header>
+  <header class="bg-primary">
     <div class="container">
-      This is the header
+      <Logo :dark="true" class="w-20" />
     </div>
   </header>
 </template>
