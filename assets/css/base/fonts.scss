@@ -1,0 +1,36 @@
+@layer base {
+  @font-face {
+    font-family: 'Futura Std';
+    src: url('~assets/fonts/FuturaStd-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Futura Std';
+    src: url('~assets/fonts/FuturaStd-Heavy.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Futura Std';
+    src: url('~assets/fonts/FuturaStd-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Futura Std';
+    src: url('~assets/fonts/FuturaStd-MediumOblique.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Conthrax';
+    src: url('~assets/fonts/conthrax-sb.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+}
