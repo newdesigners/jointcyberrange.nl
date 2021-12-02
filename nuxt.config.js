@@ -27,6 +27,7 @@ export default {
   plugins: [
     { src: '~/plugins/composition-api.js' },
     { src: '~/plugins/storyblok-rich-text-renderer.js' },
+    { src: '~/plugins/vue-tasty-burgers.js', mode: 'client' },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

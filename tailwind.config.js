@@ -1,5 +1,6 @@
 module.exports = {
   mode: 'jit',
+  important: true,
   purge: [
     './components/**/*.{vue,js}',
     './layouts/**/*.vue',
@@ -51,7 +52,7 @@ module.exports = {
         ],
       }, 
       fontSize: {
-        '18': ['18px', { lineHeight: '21px' }],
+        '18': ['18px', { lineHeight: '22px' }],
         '20': ['20px', { lineHeight: '24px' }],
         '24': ['24px', { lineHeight: '28.8px' }],
         '24-body': ['24px', { lineHeight: '33.6px' }],
