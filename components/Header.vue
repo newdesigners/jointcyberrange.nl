@@ -1,9 +1,11 @@
 <template>
-  <header class="delay-300 h-20 transition-height duration-500 ease-in-out sticky top-0 bg-primary overflow-hidden" :class="{ 'h-header' : isActive }">
-    <div class="container flex justify-between flex-wrap">
-      <div class="h-20 py-2.5 w-full flex justify-between">
-        <Logo :dark="true" class="w-20" />
-        <aside class="flex justify-center items-center">
+  <header class="z-10 delay-300 h-20 transition-height duration-500 ease-in-out sticky top-0 bg-primary overflow-hidden xl:overflow-visible" :class="{ 'h-header' : isActive }">
+    <div class="h-20 container flex justify-between flex-wrap xl:justify-start">
+      <div class="h-20 py-2.5 w-full flex justify-between xl:w-initial">
+        <NuxtLink to="/">
+          <Logo :dark="true" class="w-20" />
+        </NuxtLink>
+        <aside class="flex justify-center items-center xl:hidden"> 
           <tasty-burger-button
             ref="hamburger"
             type="spin"
@@ -15,31 +17,31 @@
           />
         </aside>
       </div>
-      <div class="delay-200 transition duration-1000 ease-in-out opacity-0 w-full font-conthrax text-18 text-white" :class="{ 'header--open' : isActive }">
-        <ul class="py-10">
-          <li class="pb-4 flex justify-between items-center flex-wrap gap-y-6">
+      <div class="delay-200 transition duration-500 ease-in-out opacity-0 w-full font-conthrax text-18 text-white xl:flex  xl:flex-1 xl:opacity-100 xl:h-full xl:justify-end" :class="{ 'header--open' : isActive }">
+        <ul class="py-10 xl:flex xl:py-0 xl:items-center xl:h-full" @click="onClose">
+          <li class="h-full relative pb-4 xl:pb-0 xl:mr-12 flex justify-between items-center flex-wrap gap-y-6 menu-sub">
             <NuxtLink to="/what-we-do">What we do</NuxtLink>
-            <div class="w-full">
-              <ul class="pl-6">
-                <li class="pb-4"><NuxtLink to="/what-we-do">About JCR</NuxtLink></li>
-                <li class="pb-4"><NuxtLink to="/our-vision">Our vision</NuxtLink></li>
-                <li class="pb-4"><NuxtLink to="/what-is-a-cyber-range">What is a cyber range?</NuxtLink></li>
+            <div class="w-full xl:hidden menu-sub__container xl:w-initial">
+              <ul class="pl-6 bg-primary xl:pl-0">
+                <li class="menu-sub__item pb-4 xl:py-5 xl:px-16"><NuxtLink class="menu-sub__link inline-block w-44 xl:text-center" to="/what-we-do"><span>About JCR</span></NuxtLink></li>
+                <li class="menu-sub__item pb-4 xl:py-5 xl:px-16"><NuxtLink class="menu-sub__link inline-block w-44 xl:text-center" to="/our-vision"><span>Our vision</span></NuxtLink></li>
+                <li class="menu-sub__item pb-4 xl:py-5 xl:px-16"><NuxtLink class="menu-sub__link inline-block w-44 xl:text-center" to="/what-is-a-cyber-range"><span>What is a cyber range?</span></NuxtLink></li>
               </ul>
             </div>
           </li>
-          <li class="pb-4 flex justify-between items-center flex-wrap gap-y-6">
+          <li class="h-full relative pb-4 xl:pb-0 xl:mr-12 flex justify-between items-center flex-wrap gap-y-6 menu-sub">
             <NuxtLink to="/how-it-works">How it works</NuxtLink>
-            <div class="w-full">
-              <ul class="pl-6">
-                <li class="pb-4"><NuxtLink to="/how-it-works">Platform</NuxtLink></li>
-                <li class="pb-4"><NuxtLink to="/is-it-safe">Is it safe?</NuxtLink></li>
-                <li class="pb-4"><NuxtLink to="/faq">FAQ</NuxtLink></li>
+            <div class="w-full xl:hidden menu-sub__container xl:w-initial">
+              <ul class="pl-6 bg-primary xl:pl-0">
+                <li class="menu-sub__item pb-4 xl:py-5 xl:px-16"><NuxtLink class="menu-sub__link inline-block w-44 xl:text-center" to="/how-it-works"><span>Platform</span></NuxtLink></li>
+                <li class="menu-sub__item pb-4 xl:py-5 xl:px-16"><NuxtLink class="menu-sub__link inline-block w-44 xl:text-center" to="/is-it-safe"><span>Is it safe?</span></NuxtLink></li>
+                <li class="menu-sub__item pb-4 xl:py-5 xl:px-16"><NuxtLink class="menu-sub__link inline-block w-44 xl:text-center" to="/faq"><span>FAQ</span></NuxtLink></li>
               </ul>
             </div>
           </li>
-          <li class="pb-4"><NuxtLink to="/why-jcr">Why JCR</NuxtLink></li>
-          <li class="pb-4"><NuxtLink to="/contact-us">Contact us</NuxtLink></li>
-          <li lass="pb-4"><NuxtLink class="btn btn--small" to="/demo">Demo</NuxtLink></li>
+          <li class="pb-4 xl:pb-0 xl:mr-12"><NuxtLink to="/why-jcr">Why JCR</NuxtLink></li>
+          <li class="pb-4 xl:pb-0 xl:mr-12"><NuxtLink to="/contact-us">Contact us</NuxtLink></li>
+          <li lass="pb-4 xl:pb-0"><NuxtLink class="btn btn--small" to="/demo">Demo</NuxtLink></li>
         </ul>
       </div>
     </div>

@@ -35,6 +35,12 @@
   p {
     @apply font-medium text-18 lg:text-24-body font-futura tracking-wider;
   }
+
+  a {
+    &:hover {
+      @apply text-green;
+    }
+  }
   
   mark {
     @apply text-green;

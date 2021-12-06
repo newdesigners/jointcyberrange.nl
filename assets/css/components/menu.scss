@@ -1,0 +1,40 @@
+.menu {
+  &-sub {
+    &:hover {
+      .menu {
+        &-sub {
+          &__container {
+            @apply absolute z-20 block top-full left-1/2 transform -translate-x-1/2 !important;
+          }
+        }
+
+      }
+    }
+
+    &__link {
+    }
+
+    &__item {
+      @apply relative;
+
+      &::before {
+        content: '';
+        @apply opacity-0 absolute w-2 h-2 rounded-full bg-secondary top-1/2 left-5 transform -translate-y-1/2; 
+      }
+
+      &:hover {
+        &::before {
+          @apply opacity-100;
+        }
+
+        span {
+          @apply transform translate-x-3;
+        }
+      }
+
+      span {
+        @apply relative inline-block transition-transform duration-150 ease-out;
+      }
+    }
+  }
+}

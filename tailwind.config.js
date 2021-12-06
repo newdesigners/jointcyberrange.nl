@@ -68,8 +68,12 @@ module.exports = {
         'header' : '40rem', 
       },
       transitionProperty: {
-        'height': 'height'
+        'height': 'height',
+        'box-shadow': 'box-shadow',
       },
+      boxShadow: {
+        'button': '0px 0px 35px 7px rgba(237, 37, 78, .8)',
+      }
     },
     container: {
       padding: {
