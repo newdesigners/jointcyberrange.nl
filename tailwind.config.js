@@ -63,6 +63,13 @@ module.exports = {
       width: {
         'initial': 'initial',
       },
+      height: {
+        'initial': 'initial',
+        'header' : '40rem', 
+      },
+      transitionProperty: {
+        'height': 'height'
+      },
     },
     container: {
       padding: {

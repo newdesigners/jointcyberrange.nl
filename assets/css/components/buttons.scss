@@ -1,3 +1,7 @@
 .btn {
-  @apply bg-secondary font-conthrax;
+  @apply inline-block py-4 px-8 bg-secondary rounded-xl font-conthrax;
+}
+
+.btn--small {
+  @apply text-18;
 }
