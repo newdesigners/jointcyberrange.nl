@@ -1,8 +1,8 @@
 <template>
-  <header class="z-10 delay-300 h-20 transition-height duration-500 ease-in-out sticky top-0 bg-primary overflow-hidden xl:overflow-visible" :class="{ 'h-header' : isActive }">
+  <header class="z-10 delay-100 h-20 transition-height duration-500 ease-in-out sticky top-0 bg-primary overflow-hidden xl:overflow-visible" :class="{ 'h-header' : isActive }">
     <div class="h-20 container flex justify-between flex-wrap xl:justify-start">
       <div class="h-20 py-2.5 w-full flex justify-between xl:w-initial">
-        <NuxtLink to="/">
+        <NuxtLink to="/" @click.native="onClose">
           <Logo :dark="true" class="w-20" />
         </NuxtLink>
         <aside class="flex justify-center items-center xl:hidden"> 
@@ -17,7 +17,7 @@
           />
         </aside>
       </div>
-      <div class="delay-200 transition duration-500 ease-in-out opacity-0 w-full font-conthrax text-18 text-white xl:flex  xl:flex-1 xl:opacity-100 xl:h-full xl:justify-end" :class="{ 'header--open' : isActive }">
+      <div class="delay-200 transition duration-500 ease-out opacity-0 w-full font-conthrax text-18 text-white xl:flex  xl:flex-1 xl:opacity-100 xl:h-full xl:justify-end" :class="{ 'header--open' : isActive }">
         <ul class="py-10 xl:flex xl:py-0 xl:items-center xl:h-full" @click="onClose">
           <li class="h-full relative pb-4 xl:pb-0 xl:mr-12 flex justify-between items-center flex-wrap gap-y-6 menu-sub">
             <NuxtLink to="/what-we-do">What we do</NuxtLink>

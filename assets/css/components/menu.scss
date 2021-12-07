@@ -4,7 +4,7 @@
       .menu {
         &-sub {
           &__container {
-            @apply absolute z-20 block top-full left-1/2 transform -translate-x-1/2 !important;
+            @apply xl:absolute xl:absolute xl:z-20 xl:block xl:top-full xl:left-1/2 xl:transform xl:-translate-x-1/2 !important;
           }
         }
 
@@ -22,7 +22,7 @@
 
       &::before {
         content: '';
-        @apply hidden xl:block opacity-0 absolute w-2 h-2 rounded-full bg-secondary top-1/2 left-5 transform -translate-y-1/2; 
+        @apply transition-opacity duration-300 ease-out hidden xl:block opacity-0 absolute w-2 h-2 rounded-full bg-secondary top-1/2 left-5 transform -translate-y-1/2; 
       }
 
       &:hover {
@@ -36,7 +36,7 @@
       }
 
       span {
-        @apply relative inline-block transition-transform duration-150 ease-out;
+        @apply relative inline-block transition-transform duration-200 ease-out;
       }
     }
   }
