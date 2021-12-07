@@ -28,6 +28,7 @@ module.exports = {
         secondary: '#ED254E',
         blue: '#6199FC',
         green: '#61E786',
+        background: '#01102C',
       },
       fontFamily: {
         conthrax: [
@@ -62,6 +63,10 @@ module.exports = {
       },
       width: {
         'initial': 'initial',
+        '31%': '31%',
+        '32%': '32%',
+        '48%': '48%',
+        '49%': '49%',
       },
       height: {
         'initial': 'initial',
