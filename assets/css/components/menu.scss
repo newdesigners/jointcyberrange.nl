@@ -1,0 +1,43 @@
+.menu {
+  &-sub {
+    &:hover {
+      .menu {
+        &-sub {
+          &__container {
+            @apply xl:absolute xl:absolute xl:z-20 xl:block xl:top-full xl:left-1/2 xl:transform xl:-translate-x-1/2 !important;
+          }
+        }
+
+      }
+    }
+
+    &__link {
+      &.nuxt-link-exact-active {
+        
+      }
+    }
+
+    &__item {
+      @apply relative;
+
+      &::before {
+        content: '';
+        @apply transition-opacity duration-300 ease-out hidden xl:block opacity-0 absolute w-2 h-2 rounded-full bg-secondary top-1/2 left-5 transform -translate-y-1/2; 
+      }
+
+      &:hover {
+        &::before {
+          @apply opacity-100;
+        }
+
+        span {
+          @apply transform translate-x-3;
+        }
+      }
+
+      span {
+        @apply relative inline-block transition-transform duration-200 ease-out;
+      }
+    }
+  }
+}

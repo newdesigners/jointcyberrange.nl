@@ -28,12 +28,18 @@
   }
 
   body {
-    @apply relative font-futura text-24-body font-medium tracking-wider;
+    @apply relative font-futura text-18 lg:text-24-body font-medium tracking-wider;
     min-height: -webkit-fill-available;
   }
 
   p {
-    @apply font-medium text-24-body font-futura tracking-wider;
+    @apply font-medium text-18 lg:text-24-body font-futura tracking-wider;
+  }
+
+  a {
+    &:hover {
+      @apply text-green;
+    }
   }
   
   mark {
@@ -65,14 +71,12 @@
     @apply text-18;
   }
 
+
   select {
-    /* for Firefox */
     -moz-appearance: none;
-    /* for Chrome */
     -webkit-appearance: none;
   }
   
-  /* For IE10 */
   select::-ms-expand {
     display: none;
   }
