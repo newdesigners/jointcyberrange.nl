@@ -65,7 +65,11 @@ module.exports = {
       },
       height: {
         'initial': 'initial',
-        'header' : '40rem', 
+        'header' : '40rem',
+        'page-introduction-image': '32rem',
+      },
+      minHeight: {
+        '300px': '300px',
       },
       transitionProperty: {
         'height': 'height',
@@ -78,6 +82,8 @@ module.exports = {
     container: {
       padding: {
         DEFAULT: '20px',
+        lg: '2.5rem',
+        xl: '3.5rem',
       },
       center: true,
     },
