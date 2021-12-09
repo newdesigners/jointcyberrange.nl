@@ -68,6 +68,10 @@ module.exports = {
         '48%': '48%',
         '49%': '49%',
       },
+      maxWidth: {
+        'grid-icon-text': '14rem',
+        'grid-icon-text-icon': '9rem',
+      },
       height: {
         'initial': 'initial',
         'header' : '40rem',
