@@ -2,11 +2,11 @@
   <footer>
     <article class="container pt-10 pb-5 xl:py-14">
       <section class="flex">
-        <div class="w-16 mr-5 md:mr-12 xl:mr-8 sm:w-44 lg:w-64 xl:w-52">
+        <div class="w-16 mr-5 md:mr-12 lg:mr-5 sm:w-44 lg:w-64 xl:w-52">
           <Logo :dark="true" class="w-16 sm:w-44 md:pb-16" />
         </div>
         <div class="flex-1 mr-8 xl:mr-0">
-          <ul class="font-conthrax text-14 lg:text-18 xl:flex">
+          <ul class="font-conthrax text-14 lg:text-18 xl:flex xl:justify-evenly">
             <li class="pb-4 lg:pr-8">
               <NuxtLink to="/what-we-do">What we do</NuxtLink>
               <ul class="hidden xl:block xl:pt-5 text-14">
