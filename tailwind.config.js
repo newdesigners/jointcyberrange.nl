@@ -53,6 +53,8 @@ module.exports = {
         ],
       }, 
       fontSize: {
+        '12': ['12px', { lineHeight: '16.8px' }],
+        '14': ['14px', { lineHeight: '16.8px' }],
         '18': ['18px', { lineHeight: '22px' }],
         '20': ['20px', { lineHeight: '24px' }],
         '24': ['24px', { lineHeight: '28.8px' }],
@@ -92,8 +94,8 @@ module.exports = {
     container: {
       padding: {
         DEFAULT: '20px',
-        lg: '2.5rem',
-        xl: '3.5rem',
+        lg: '1.75rem',
+        xl: '2rem',
       },
       center: true,
     },
