@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <article class="container pt-10 pb-5">
+    <article class="container pt-10 pb-5 xl:py-14">
       <section class="flex">
         <div class="w-16 mr-5 md:mr-12 xl:mr-8 sm:w-44 lg:w-64 xl:w-52">
           <Logo :dark="true" class="w-16 sm:w-44 md:pb-16" />
