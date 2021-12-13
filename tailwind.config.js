@@ -53,6 +53,7 @@ module.exports = {
         ],
       }, 
       fontSize: {
+        '14': ['14px', { lineHeight: '16.8px' }],
         '18': ['18px', { lineHeight: '22px' }],
         '20': ['20px', { lineHeight: '24px' }],
         '24': ['24px', { lineHeight: '28.8px' }],
