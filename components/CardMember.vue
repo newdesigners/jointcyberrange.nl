@@ -3,7 +3,7 @@
     v-editable="blok"
   >
     <div class="bg-background relative shadow-card-member">
-      <div class="flex mt-10 h-40 sm:h-36 even:bg-green card__header">
+      <div class="flex mt-10 h-40 sm:h-36 card__header">
         <figure class="relative -top-10 w-36 h-40" v-if="blok.image.filename">
           <img
             class="w-full h-full object-cover"

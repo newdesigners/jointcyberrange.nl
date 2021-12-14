@@ -9,7 +9,7 @@
       <div class="px-2">
         <ul class="">
           <li
-            class="mb-28 card"
+            class="mb-28 card--member "
             v-for="member in blok.members"
             :key="member._uid"
           >
