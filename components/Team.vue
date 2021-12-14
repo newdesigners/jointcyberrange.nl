@@ -4,12 +4,12 @@
   >
     <article class="">
       <div class="container">
-        <h2 class="pb-5 lg:pb-10">{{ blok.title }}</h2>
+        <h2 class="pb-5 md:pb-12">{{ blok.title }}</h2>
       </div>
-      <div class="px-2">
+      <div class="containter px-2 md:px-container">
         <ul class="">
           <li
-            class="mb-28 card--member "
+            class="mb-28 card--member"
             v-for="member in blok.members"
             :key="member._uid"
           >
