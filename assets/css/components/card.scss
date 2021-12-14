@@ -1,0 +1,9 @@
+.card {
+  &:nth-child(even) {
+    .card {
+      &__header {
+        @apply flex-row-reverse;
+      }
+    }
+  }
+}
