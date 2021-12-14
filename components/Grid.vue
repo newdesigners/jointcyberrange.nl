@@ -3,7 +3,7 @@
     v-editable="blok"
   >
     <div class="container">
-      <article class="relative z-10 py-10 lg:py-20 sm:w-4/5 mx-auto text-center">
+      <article class="py-10 lg:py-20 sm:w-4/5 mx-auto text-center">
         <h2
           class="pb-10 lg:pb-14"
           v-if="blok.title"
