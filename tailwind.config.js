@@ -1,5 +1,6 @@
 module.exports = {
   mode: 'jit',
+  important: true,
   purge: [
     './components/**/*.{vue,js}',
     './layouts/**/*.vue',
@@ -27,6 +28,7 @@ module.exports = {
         secondary: '#ED254E',
         blue: '#6199FC',
         green: '#61E786',
+        background: '#01102C',
       },
       fontFamily: {
         conthrax: [
@@ -51,7 +53,7 @@ module.exports = {
         ],
       }, 
       fontSize: {
-        '18': ['18px', { lineHeight: '21px' }],
+        '18': ['18px', { lineHeight: '22px' }],
         '20': ['20px', { lineHeight: '24px' }],
         '24': ['24px', { lineHeight: '28.8px' }],
         '24-body': ['24px', { lineHeight: '33.6px' }],
@@ -61,11 +63,37 @@ module.exports = {
       },
       width: {
         'initial': 'initial',
+        '31%': '31%',
+        '32%': '32%',
+        '48%': '48%',
+        '49%': '49%',
       },
+      maxWidth: {
+        'grid-icon-text': '14rem',
+        'grid-icon-text-icon-lg': '9rem',
+        'grid-icon-text-icon': '5rem',
+      },
+      height: {
+        'initial': 'initial',
+        'header' : '40rem',
+        'page-introduction-image': '32rem',
+      },
+      minHeight: {
+        '300px': '300px',
+      },
+      transitionProperty: {
+        'height': 'height',
+        'box-shadow': 'box-shadow',
+      },
+      boxShadow: {
+        'button': '0px 0px 35px 7px rgba(237, 37, 78, .8)',
+      }
     },
     container: {
       padding: {
         DEFAULT: '20px',
+        lg: '2.5rem',
+        xl: '3.5rem',
       },
       center: true,
     },
