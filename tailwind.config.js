@@ -17,6 +17,7 @@ module.exports = {
         '32%': '32%',
         '48%': '48%',
         '49%': '49%',
+        '60%': '60%',
         'initial' : 'innital',
       },
       colors: {
@@ -89,6 +90,16 @@ module.exports = {
       },
       boxShadow: {
         'button': '0px 0px 35px 7px rgba(237, 37, 78, .8)',
+      },
+      backgroundImage: {
+        'highlight-circle' : `url('/svg/highlight_circle.svg')`
+      },
+      zIndex: {
+        '-10': '-10',
+        '-20': '-20',
+        '-30': '-30',
+        '-40': '-40',
+        '-50': '-50',
       }
     },
     container: {
