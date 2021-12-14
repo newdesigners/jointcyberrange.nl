@@ -3,7 +3,7 @@
     v-editable="blok"
   >
     <div class="container">
-      <article class="py-10 lg:py-28 sm:w-3/4 mx-auto text-center">
+      <article class="py-10 lg:py-20 sm:w-4/5 mx-auto text-center">
         <h2
           class="pb-10 lg:pb-14"
           v-if="blok.title"
@@ -15,7 +15,7 @@
           :class="{ 'gap-y-10 lg:gap-x-10': type === 'logo' }">
           <li 
             class="max-w-grid-icon-text w-32% sm:w-1/4 flex items-center justify-center"
-            :class="{ 'w-5/12 h-20 sm:w-5/12 lg:w-1/5' : item.component === 'logo' }"
+            :class="{ 'w-5/12 sm:w-5/12 h-20 lg:w-1/5' : item.component === 'logo', 'lg:w-5/12 max-w-[300px]' : blok.size === 'large' }"
             v-for="item in blok.items" :key="item._uid"
           >
             <div class="w-full" v-if="item.component === 'icon_text'">
