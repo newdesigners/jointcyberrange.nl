@@ -89,7 +89,10 @@ module.exports = {
       },
       boxShadow: {
         'button': '0px 0px 35px 7px rgba(237, 37, 78, .8)',
-      }
+      },
+      backgroundImage: {
+        'highlight-circle' : `url('/svg/highlight_circle.svg')`
+      },
     },
     container: {
       padding: {
