@@ -1,10 +1,11 @@
 <template>
-  <div 
+  <div
+    class="lg:flex lg:justify-end"
     v-editable="blok"
   >
-    <div class="bg-background relative shadow-card-member">
+    <div class="bg-background relative shadow-card-member lg:w-[95%]">
       <div class="flex mt-10 h-40 sm:h-36 card__header">
-        <figure class="relative -top-10 w-36 h-40" v-if="blok.image.filename">
+        <figure class="relative -top-10 w-36 h-40 lg:w-80 lg:h-96" v-if="blok.image.filename">
           <img
             class="w-full h-full object-cover"
             :src="blok.image.filename"
