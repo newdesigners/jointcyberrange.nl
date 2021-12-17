@@ -3,7 +3,15 @@
     &:nth-child(even) {
       .card {
         &__header {
-          @apply flex-row-reverse;
+          figure {
+            @apply right-0 left-initial !important;
+          }
+
+          @apply pl-0 flex-row-reverse !important;
+        }
+
+        &__body {
+          @apply pl-4 pr-[9.25rem] !important;
         }
       }
     }

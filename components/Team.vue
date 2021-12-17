@@ -6,7 +6,7 @@
       <div class="container">
         <h2 class="pb-5 md:pb-12">{{ blok.title }}</h2>
       </div>
-      <div class="containter px-2 md:px-inherit">
+      <div class="container px-2 md:px-container lg:px-container-lg xl:px-container-xl">
         <ul class="">
           <li
             class="mb-28 card--member"

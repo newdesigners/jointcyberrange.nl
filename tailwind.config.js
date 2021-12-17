@@ -13,12 +13,14 @@ module.exports = {
     extend: {
       spacing: {
         'container': "theme(container.padding.DEFAULT)",
+        'container-lg': "theme(container.padding.lg)",
+        'container-xl': "theme(container.padding.xl)",
         '31%': '31%',
         '32%': '32%',
         '48%': '48%',
         '49%': '49%',
         '60%': '60%',
-        'initial' : 'innital',
+        'initial' : 'initial',
       },
       colors: {
         //Base
