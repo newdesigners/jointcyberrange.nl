@@ -45,6 +45,7 @@ export default {
     // Load the JSON from the API - loadig the home content (index page)
     return context.app.$storyapi.get(`cdn/stories/${ fullSlug }`, {
       version,
+      resolve_relations: 'related-pages.pages',
     }).then((res) => {
       return res.data;
     }).catch((res) => {

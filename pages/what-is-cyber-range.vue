@@ -1,7 +1,7 @@
 <template>
   <section>
     <div class="container">
-      <h1>What is a cyber range page</h1>
+      <h1>What is cyber range page</h1>
     </div>
   </section>
 </template>
