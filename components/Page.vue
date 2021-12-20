@@ -2,6 +2,7 @@
   <div v-editable="blok">
     <component
       v-for="blok in blok.body"
+      :page="page"
       :key="blok._uid"
       :blok="blok"
       :is="blok.component" />
@@ -14,6 +15,11 @@ export default {
     blok: {
       type: Object,
       required: true,
+    },
+  },
+  computed: {
+    page() {
+      return this.blok;
     },
   },
 };

@@ -20,12 +20,12 @@
       <div class="delay-200 transition duration-500 ease-out opacity-0 w-full font-conthrax text-18 text-white xl:flex  xl:flex-1 xl:opacity-100 xl:h-full xl:justify-end" :class="{ 'header--open' : isActive }">
         <ul class="py-6 xl:flex xl:py-0 xl:items-center xl:h-full" @click="onClose">
           <li class="h-full relative pb-4 xl:pb-0 xl:mr-12 flex justify-between items-center flex-wrap gap-y-6 menu-sub">
-            <NuxtLink to="/what-we-do">What we do</NuxtLink>
+            <NuxtLink to="/about-jcr">What we do</NuxtLink>
             <div class="w-full xl:hidden menu-sub__container xl:w-initial">
               <ul class="pl-6 bg-primary xl:pl-0">
-                <li class="menu-sub__item pb-4 xl:py-5 xl:px-16"><NuxtLink class="menu-sub__link inline-block w-44 xl:text-center" to="/what-we-do"><span>About JCR</span></NuxtLink></li>
+                <li class="menu-sub__item pb-4 xl:py-5 xl:px-16"><NuxtLink class="menu-sub__link inline-block w-44 xl:text-center" to="/about-jcr"><span>About JCR</span></NuxtLink></li>
                 <li class="menu-sub__item pb-4 xl:py-5 xl:px-16"><NuxtLink class="menu-sub__link inline-block w-44 xl:text-center" to="/our-vision"><span>Our vision</span></NuxtLink></li>
-                <li class="menu-sub__item pb-4 xl:py-5 xl:px-16"><NuxtLink class="menu-sub__link inline-block w-44 xl:text-center" to="/what-is-a-cyber-range"><span>What is a cyber range?</span></NuxtLink></li>
+                <li class="menu-sub__item pb-4 xl:py-5 xl:px-16"><NuxtLink class="menu-sub__link inline-block w-44 xl:text-center" to="/what-is-cyber-range"><span>What is a cyber range?</span></NuxtLink></li>
               </ul>
             </div>
           </li>

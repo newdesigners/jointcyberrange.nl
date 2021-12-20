@@ -2,7 +2,7 @@
   <div 
     v-editable="blok"
     class="bg-cover flex items-end h-72 lg:h-page-introduction-image mb-10 lg:mb-20"
-    :style="blok.background_image ? { background: `linear-gradient(0deg, rgba(1, 16, 44, .5), rgba(1, 16, 44, .5)),  url(${ blok.background_image.filename })` } : ``"
+    :style="page.image ? { background: `linear-gradient(0deg, rgba(1, 16, 44, .5), rgba(1, 16, 44, .5)),  url(${ page.image.filename })` } : ``"
   >
     <div class="container">
       <article class="hidden md:block py-14">
@@ -23,6 +23,9 @@ export default {
     blok: {
       type: Object,
       required: true,
+    },
+    page: {
+      type: Object,
     },
   },
 }
