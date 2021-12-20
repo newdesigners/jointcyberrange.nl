@@ -1,0 +1,29 @@
+.card {
+  &--member {
+    &:nth-child(even) {
+      .card {
+        &__header {
+          @apply pr-0 !important;
+
+          figure {
+            @apply right-0 lg:-right-10 left-initial !important;
+          }
+
+          @apply pl-0 flex-row-reverse !important;
+        }
+
+        &__body, aside {
+          @apply pl-4 pr-40 lg:pr-80 lg:pl-10 xl:pl-16 !important;
+        }
+
+        aside {
+          @apply pr-4 lg:pr-10 !important;
+
+          article {
+            @apply pr-initial lg:pr-0 xl:pr-72 !important;
+          }
+        }
+      }
+    }
+  }
+}

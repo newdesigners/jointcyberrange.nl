@@ -13,11 +13,14 @@ module.exports = {
     extend: {
       spacing: {
         'container': "theme(container.padding.DEFAULT)",
+        'container-lg': "theme(container.padding.lg)",
+        'container-xl': "theme(container.padding.xl)",
         '31%': '31%',
         '32%': '32%',
         '48%': '48%',
         '49%': '49%',
-        'initial' : 'innital',
+        '60%': '60%',
+        'initial' : 'initial',
       },
       colors: {
         //Base
@@ -53,7 +56,10 @@ module.exports = {
         ],
       }, 
       fontSize: {
-        '18': ['18px', { lineHeight: '22px' }],
+        '12': ['12px', { lineHeight: '16.8px' }],
+        '14': ['14px', { lineHeight: '16.8px' }],
+        '16': ['16px', { lineHeight: '22.4px' }],
+        '18': ['18px', { lineHeight: '25.2px' }],
         '20': ['20px', { lineHeight: '24px' }],
         '24': ['24px', { lineHeight: '28.8px' }],
         '24-body': ['24px', { lineHeight: '33.6px' }],
@@ -87,13 +93,24 @@ module.exports = {
       },
       boxShadow: {
         'button': '0px 0px 35px 7px rgba(237, 37, 78, .8)',
+        'card-member': '0px 0px 57px rgba(97, 231, 134, .5)',
+      },
+      backgroundImage: {
+        'highlight-circle' : `url('/svg/highlight_circle.svg')`
+      },
+      zIndex: {
+        '-10': '-10',
+        '-20': '-20',
+        '-30': '-30',
+        '-40': '-40',
+        '-50': '-50',
       }
     },
     container: {
       padding: {
         DEFAULT: '20px',
-        lg: '2.5rem',
-        xl: '3.5rem',
+        lg: '1.75rem',
+        xl: '2.5rem',
       },
       center: true,
     },
