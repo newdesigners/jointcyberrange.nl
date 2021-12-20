@@ -28,34 +28,11 @@
 
 <script>
 export default {
-  data() {
-    return {
-      relatedPages: [],
-    };
-  },
   props: {
     blok: {
       type: Object,
       required: true,
     },
-    page: {
-      type: Object,
-    },
   },
-  async mounted () {
-    this.relatedPages = this.fetchRelatedPages();
-  },
-  methods: {
-    async fetchRelatedPages() {
-      const version = process.env.NODE_ENV !== 'production' ? 'draft' : 'published';
-      
-      const res = await this.$storyapi.get('cdn/stories', {
-        version,
-        resolve_relations: 'related-pages.pages',
-      });
-      console.log(res.data.stories);
-      return res.data.stories;
-    },
-  }
 }
 </script>
