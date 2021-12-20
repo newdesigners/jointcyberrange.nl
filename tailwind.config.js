@@ -13,12 +13,14 @@ module.exports = {
     extend: {
       spacing: {
         'container': "theme(container.padding.DEFAULT)",
+        'container-lg': "theme(container.padding.lg)",
+        'container-xl': "theme(container.padding.xl)",
         '31%': '31%',
         '32%': '32%',
         '48%': '48%',
         '49%': '49%',
         '60%': '60%',
-        'initial' : 'innital',
+        'initial' : 'initial',
       },
       colors: {
         //Base
@@ -56,6 +58,7 @@ module.exports = {
       fontSize: {
         '12': ['12px', { lineHeight: '16.8px' }],
         '14': ['14px', { lineHeight: '16.8px' }],
+        '16': ['16px', { lineHeight: '22.4px' }],
         '18': ['18px', { lineHeight: '25.2px' }],
         '20': ['20px', { lineHeight: '24px' }],
         '24': ['24px', { lineHeight: '28.8px' }],
@@ -90,6 +93,7 @@ module.exports = {
       },
       boxShadow: {
         'button': '0px 0px 35px 7px rgba(237, 37, 78, .8)',
+        'card-member': '0px 0px 57px rgba(97, 231, 134, .5)',
       },
       backgroundImage: {
         'highlight-circle' : `url('/svg/highlight_circle.svg')`
