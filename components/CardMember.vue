@@ -5,7 +5,10 @@
   >
     <div class="bg-background relative shadow-card-member lg:w-11/12">
       <div class="w-full relative px-2.5 lg:px-10 pl-40 lg:pl-80 flex mt-10 min-h-36 card__header">
-        <figure class="absolute left-0 -top-10 w-36 h-40 lg:w-[312px] lg:h-[352px] lg:-left-10 lg:-top-32" v-if="blok.image.filename">
+        <figure
+          class="absolute left-0 -top-10 w-36 h-40 lg:w-[312px] lg:h-[352px] lg:-left-10 lg:-top-32"
+          v-if="blok.image.filename"
+        >
           <img
             class="w-full h-full object-cover"
             :src="blok.image.filename"

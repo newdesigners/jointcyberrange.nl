@@ -9,6 +9,7 @@
         <h1 class="text-white pb-2.5">{{ blok.title }}</h1>
         <p class="text-white pb-5 lg:w-2/3 lg:pb-12 xl:w-1/2">{{ blok.description }}</p>
         <Button
+          v-if="blok.button_url"
           :label="blok.button_label"
           :button="blok.button_url"
         />

@@ -1,0 +1,19 @@
+.text-image-overlap {
+  &__item {
+    &:nth-child(odd) {
+      figure {
+        @apply lg:mt-16 !important;
+      }
+    }   
+
+    &:nth-child(even) {
+      .text-image-overlap { 
+        &__item {
+          &-description {
+            @apply left-0 bottom-0 top-auto !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -17,6 +17,8 @@ module.exports = {
         'container-xl': "theme(container.padding.xl)",
         '31%': '31%',
         '32%': '32%',
+        '46%': '46%',
+        '47%': '47%',
         '48%': '48%',
         '49%': '49%',
         '60%': '60%',
@@ -41,6 +43,11 @@ module.exports = {
         ],
         futura: [
           'Futura Std',
+          'sans-serif',
+          'Arial',
+        ],
+        'futura-medium': [
+          'Futura Std Medium',
           'sans-serif',
           'Arial',
         ],
