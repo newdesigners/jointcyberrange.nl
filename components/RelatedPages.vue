@@ -10,15 +10,20 @@
           <li
             v-for="p in blok.pages"
             :key="p._uid"
-            class="h-48 lg:h-[345px] w-full md:w-1/2 flex justify-center items-center bg-cover"
-            :style="p.content.image.filename ? { background: `linear-gradient(0deg, rgba(1, 16, 44, .5), rgba(1, 16, 44, .5)),  url(${ p.content.image.filename })` } : ``"
+            class="h-48 lg:h-[345px] w-full md:w-1/2 flex mb-5 lg:mb-10"
           >
-            <NuxtLink 
-              class="block"
-              :to="p.full_slug"
+            <div
+              v-if="p.content"
+              class="w-full h-full bg-cover"
+              :style="p.content.image.filename ? { background: `linear-gradient(0deg, rgba(1, 16, 44, .5), rgba(1, 16, 44, .5)),  url(${ p.content.image.filename })` } : ``"
             >
-              <h3 class="text-center inline-block uppercase text-36">{{ p.name }}</h3>
-            </NuxtLink>
+              <NuxtLink 
+                class="flex h-full items-center justify-center"
+                :to="p.full_slug"
+              >
+                <h3 class="text-center inline-block uppercase text-36">{{ p.name }}</h3>
+              </NuxtLink>
+            </div>
           </li>
         </ul>
       </article>

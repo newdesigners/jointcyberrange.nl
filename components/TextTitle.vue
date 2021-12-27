@@ -1,6 +1,7 @@
 <template>
   <div
-    class="relative background__highlight"
+    class="relative"
+    :class="{ 'background__highlight' : blok.background_highlight_circle }"
     v-editable="blok"
   >
     <article class="mx-auto container py-10 text-left lg:text-center sm:w-4/5">

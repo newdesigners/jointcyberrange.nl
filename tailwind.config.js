@@ -46,6 +46,11 @@ module.exports = {
           'sans-serif',
           'Arial',
         ],
+        'futura-medium': [
+          'Futura Std Medium',
+          'sans-serif',
+          'Arial',
+        ],
         'futura-bold': [
           'Futura Std Bold',
           'sans-serif',
