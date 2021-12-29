@@ -31,7 +31,8 @@ module.exports = {
         current: 'currentColor',
         primary: '#011333',
         secondary: '#ED254E',
-        blue: '#6199FC',
+        blue: '#6199FC', // this is defined in the styleguide but it's not used anywhere
+        blue: '#00B2CE', // this is not defined in the styleguide but only used for the download text
         green: '#61E786',
         background: '#01102C',
       },
