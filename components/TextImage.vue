@@ -1,7 +1,7 @@
 <template>
   <div
     v-editable="blok"
-    class="pb-5 lg:pb-10 xl:pb-32 relative"
+    class="pb-16 lg:pb-20 xl:pb-32 relative"
     :class="{ 'background__highlight background__highlight--top' : blok.background_highlight_circle, 'background__highlight--left background__highlight--top' : blok.reverse || reverse }"
   > 
     <article 
