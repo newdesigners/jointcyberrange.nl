@@ -19,7 +19,7 @@
             </NuxtLink>
             <a
               v-else
-              class="block"
+              class="block w-full h-full"
               :href="link.link.url"
             ></a>
          </li>
