@@ -14,6 +14,7 @@
           >
             <NuxtLink 
               v-if="link.link.linktype === 'story'"
+              class="block w-full h-full"
               :to="link.link.cached_url"
             >
             </NuxtLink>
