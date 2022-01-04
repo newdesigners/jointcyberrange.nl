@@ -114,7 +114,11 @@ module.exports = {
         '-30': '-30',
         '-40': '-40',
         '-50': '-50',
-      }
+      },
+      gridTemplateColumns: {
+        '2-192px': 'repeat(2, 192px)',
+        '3-192px': 'repeat(3, 192px)',
+      },
     },
     container: {
       padding: {
