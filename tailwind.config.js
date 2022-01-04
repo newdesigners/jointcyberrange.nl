@@ -98,6 +98,8 @@ module.exports = {
       transitionProperty: {
         'height': 'height',
         'box-shadow': 'box-shadow',
+        'max-height': 'max-height',
+        
       },
       boxShadow: {
         'button': '0px 0px 35px 7px rgba(237, 37, 78, .8)',
@@ -112,7 +114,11 @@ module.exports = {
         '-30': '-30',
         '-40': '-40',
         '-50': '-50',
-      }
+      },
+      gridTemplateColumns: {
+        '2-192px': 'repeat(2, 192px)',
+        '3-192px': 'repeat(3, 192px)',
+      },
     },
     container: {
       padding: {
@@ -125,6 +131,7 @@ module.exports = {
     fill: theme => ({
       'white': theme('colors.white'),
       'primary': theme('colors.primary'),
+      'green': theme('colors.green'),
     }),
   },
   variants: {
