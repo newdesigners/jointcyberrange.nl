@@ -98,6 +98,8 @@ module.exports = {
       transitionProperty: {
         'height': 'height',
         'box-shadow': 'box-shadow',
+        'max-height': 'max-height',
+        
       },
       boxShadow: {
         'button': '0px 0px 35px 7px rgba(237, 37, 78, .8)',
@@ -125,6 +127,7 @@ module.exports = {
     fill: theme => ({
       'white': theme('colors.white'),
       'primary': theme('colors.primary'),
+      'green': theme('colors.green'),
     }),
   },
   variants: {

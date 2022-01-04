@@ -2,3 +2,13 @@ div.header--open,
 header.header--open {
   @apply block opacity-100 !important;
 }
+
+.accordion {
+  &--active {
+    svg {
+      path {
+        @apply fill-green;
+      }
+    }
+  }
+}
