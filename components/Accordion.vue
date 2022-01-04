@@ -1,7 +1,7 @@
 <template>
   <div
     v-editable="blok"
-    class="pb-5 lg:pb-10 relative"
+    class="pb-5 lg:pb-10 xl:pb-24 relative"
   >
     <article class="container">
       <div class="sm:w-4/5 mx-auto max-w-[900px]">
