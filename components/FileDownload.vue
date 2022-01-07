@@ -3,7 +3,7 @@
     v-editable="blok"
     class="py-5 lg:py-10"
   >
-    <article class="container" :id="blok.anchor_id">
+    <article class="pt-28 container" :id="blok.anchor_id">
       <ul class="w-11/12 pb-16 lg:pb-32">
         <li
           v-for="file in blok.files"
