@@ -7,7 +7,7 @@
   }
 
   html > body > #__nuxt > #__layout {
-    @apply overflow-hidden;
+    /*@apply overflow-hidden;*/
 
     > div {
       @apply flex flex-col min-h-screen;

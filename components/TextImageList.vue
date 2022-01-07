@@ -1,10 +1,12 @@
 <template>
   <div
     v-editable="blok"
-    class="pb-5 lg:pb-10 relative"
-    :class="{ 'background__highlight background__highlight--left' : blok.background_highlight_circle }"
+    class="pb-5 lg:pb-10"
   >
-    <article class="container sm:w-3/4 md:w-11/12">
+    <article 
+      class="container sm:w-3/4 md:w-11/12 relative"
+      :class="{ 'background__highlight background__highlight--left' : blok.background_highlight_circle }"
+    >
       <h2 class="pb-10 lg:pb-16 text-center">{{ blok.title }}</h2>
       <ul>
         <li

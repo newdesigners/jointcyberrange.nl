@@ -13,7 +13,7 @@
 
      <!-- Internal link -->
     <NuxtLink
-      v-if="label && button.linktype === 'story' && button.anchor === ''"
+      v-if="label && button.linktype === 'story' && !button.anchor"
       :to="button.cached_url"
       class="btn"
     >
@@ -22,7 +22,7 @@
     
     <!-- Internal link + anchor -->
     <NuxtLink
-      v-if="label && button.linktype === 'story' && button.anchor !== ''"
+      v-if="label && button.linktype === 'story' && button.anchor"
       :to="`${ button.cached_url }#${ button.anchor }`"
       class="btn"
     >
