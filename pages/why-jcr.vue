@@ -10,6 +10,8 @@
 </template>
 
 <script>
+import { createSEOMeta } from '~/assets/js/utils/seo.js';
+
 export default {
   data () {
     return {
@@ -57,6 +59,21 @@ export default {
         context.error({ statusCode: res.response.status, message: res.response.data });
       }
     });
+  },
+  head() {
+    const url = this.story.full_slug;
+    const seo = this.story.content.seo;
+    
+    if(seo) {
+      const title = seo.title = seo.title ? seo.title : `Joint Cyber Range | ${ this.story.name }`;
+      return {
+        title,
+        meta: createSEOMeta({
+          url,
+          seo,
+        }),
+      };
+    }
   },
 };
 </script>
