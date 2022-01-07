@@ -2,11 +2,10 @@
   <div
     v-editable="blok"
     class="pb-16 lg:pb-20 xl:pb-32 relative"
-    :class="{ 'background__highlight background__highlight--top' : blok.background_highlight_circle, 'background__highlight--left background__highlight--top' : blok.reverse || reverse }"
   > 
     <article 
-      class="container lg:flex gap-14 justify-between"
-      :class="{ 'lg:flex-row-reverse' : blok.reverse || reverse }"
+      class="container lg:flex gap-14 justify-between relative"
+      :class="{ 'lg:flex-row-reverse' : blok.reverse || reverse, 'background__highlight background__highlight--top' : blok.background_highlight_circle, 'background__highlight--left background__highlight--top' : blok.reverse || reverse  }"
     >
       <div class="w-full lg:w-1/2 lg:flex-1">
         <h2 class="w-full pb-5">{{ blok.title }}</h2>

@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full self-start z-10 delay-100 h-20 transition-height duration-500 ease-in-out sticky top-0 bg-primary overflow-hidden xl:overflow-visible" :class="{ 'h-header' : isActive }">
+  <header class="w-full self-start z-10 delay-100 h-20 transition-height duration-500 ease-in-out sticky top-0 bg-primary overflow-hidden xl:overflow-visible" :class="{ 'h-screen' : isActive }">
     <div class="h-20 container flex justify-between flex-wrap xl:justify-start">
       <div class="h-20 py-2.5 w-full flex justify-between xl:w-initial">
         <NuxtLink to="/" @click.native="onClose">
@@ -41,7 +41,7 @@
           </li>
           <li class="pb-4 xl:pb-0 xl:mr-12"><NuxtLink to="/why-jcr">Why JCR</NuxtLink></li>
           <li class="pb-4 xl:pb-0 xl:mr-12"><NuxtLink to="/contact-us">Contact us</NuxtLink></li>
-          <li lass="pb-4 xl:pb-0"><NuxtLink class="btn btn--small" to="/demo">Demo</NuxtLink></li>
+          <li class="pb-4 xl:pb-0"><NuxtLink class="btn btn--small" to="/demo">Demo</NuxtLink></li>
         </ul>
       </div>
     </div>
