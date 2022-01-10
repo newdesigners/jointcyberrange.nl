@@ -18,10 +18,20 @@
             v-if="item.image.filename"
             class="w-52 h-52 mb-5 md:mb-0"
           >
-            <img 
+            <!-- <img 
               class="w-full h-full object-cover"
               :src="item.image.filename"
               alt="item.image.alt"
+            /> -->
+            <NuxtImg
+              class="w-full h-full object-cover"
+              width="600"
+              height="600"
+              sizes="xs:100vw sm:100vw"
+              :modifiers="{ smart: true }"
+              provider="storyblok"
+              :src="item.image.filename"
+              :alt="item.image.alt"
             />
           </figure>
           <div class="flex-1">
