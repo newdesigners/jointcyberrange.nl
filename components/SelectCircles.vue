@@ -11,7 +11,7 @@
             v-for="selector in blok.selectors"
             :key="selector._uid"
           >
-            <div class="mx-auto w-36 h-36 md:w-52 md:h-52 lg:w-72 lg:h-72 bg-background rounded-full flex items-center shadow-card-member justify-center">
+            <div class="mx-auto w-36 h-36 md:w-52 md:h-52 lg:w-72 lg:h-72 bg-blue-background rounded-full flex items-center shadow-card-member justify-center">
               <h2 class="text-18 md:text-24 lg:text-36 text-center">{{ selector.title }}</h2>
             </div>
           </li>

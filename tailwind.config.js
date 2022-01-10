@@ -30,11 +30,13 @@ module.exports = {
         white: '#FFFFFF',
         current: 'currentColor',
         primary: '#011333',
-        secondary: '#ED254E',
-        blue: '#6199FC', // this is defined in the styleguide but it's not used anywhere
-        blue: '#00B2CE', // this is not defined in the styleguide but only used for the download text
-        green: '#61E786',
-        background: '#01102C',
+        secondary: '#ed254e',
+        blue: '#6199fc', // this is defined in the styleguide but it's not used anywhere
+        blue: {
+          DEFAULT: '#00b2ce',
+          background: '#01102c'
+        }, // this is not defined in the styleguide but only used for the download text
+        green: '#61e786',
       },
       fontFamily: {
         conthrax: [
