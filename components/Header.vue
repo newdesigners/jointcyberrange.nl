@@ -32,7 +32,7 @@
           <li class="h-full relative pb-4 xl:pb-0 xl:mr-12 flex justify-between items-center flex-wrap gap-y-6 menu-sub">
             <NuxtLink to="/platform">How it works</NuxtLink>
             <div class="w-full xl:hidden menu-sub__container xl:w-initial">
-              <ul class="pl-6 bg-primary xl:pl-0">
+              <ul class="pl-6 bg-blue-background xl:pl-0">
                 <li class="menu-sub__item pb-4 xl:py-5 xl:px-16"><NuxtLink class="menu-sub__link inline-block w-44 xl:text-center" to="/platform"><span>Platform</span></NuxtLink></li>
                 <li class="menu-sub__item pb-4 xl:py-5 xl:px-16"><NuxtLink class="menu-sub__link inline-block w-44 xl:text-center" to="/is-it-safe"><span>Is it safe?</span></NuxtLink></li>
                 <li class="menu-sub__item pb-4 xl:py-5 xl:px-16"><NuxtLink class="menu-sub__link inline-block w-44 xl:text-center" to="/faq"><span>FAQ</span></NuxtLink></li>
