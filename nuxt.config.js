@@ -49,6 +49,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -63,6 +64,11 @@ export default {
       }
     ],
   ],
+  image: {
+    storyblok: {
+      baseURL: 'https://img2.storyblok.com',
+    },
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

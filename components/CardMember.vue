@@ -9,10 +9,20 @@
           class="absolute left-0 -top-10 w-36 h-40 lg:w-[312px] lg:h-[352px] lg:-left-10 lg:-top-32"
           v-if="blok.image.filename"
         >
-          <img
+          <!-- <img
             class="w-full h-full object-cover"
             :src="blok.image.filename"
             :alt="blok.image.alt" 
+          /> -->
+          <NuxtImg
+            class="w-full h-full object-cover"
+            width="936"
+            height="1056"
+            sizes="xs:100vw sm:100vw md:100vw"
+            :modifiers="{ smart: true }"
+            provider="storyblok"
+            :src="blok.image.filename"
+            :alt="blok.image.alt"
           />
         </figure>
         <div class="w-full flex-1 pt-3 card__body">

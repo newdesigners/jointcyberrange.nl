@@ -17,8 +17,18 @@
         class="lg:w-1/2 xl:w-[565px] xl:min-h-[450px]"
         v-if="blok.image.filename"
       > 
-        <img
+        <!-- <img
           class="w-full h-full object-fit"
+          :src="blok.image.filename"
+          :alt="blok.image.alt"
+        /> -->
+        <NuxtImg
+          class="w-full h-full object-fit"
+          width="555"
+          height="450"
+          sizes="xs:100vw sm:100vw md:100vw lg:100vw"
+          :modifiers="{ smart: true }"
+          provider="storyblok"
           :src="blok.image.filename"
           :alt="blok.image.alt"
         />

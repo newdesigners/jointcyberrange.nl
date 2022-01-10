@@ -3,7 +3,7 @@
     v-editable="blok"
     class="bg-cover flex items-end h-72 lg:h-page-introduction-image mb-6 lg:mb-12"
     :class="{ 'bg-top' : blok.background_position === 'top', 'bg-center' : blok.background_position === 'center', 'bg-bottom' : blok.background_position === 'bottom' }"
-    :style="page.image ? { background: `linear-gradient(0deg, rgba(1, 16, 44, .5), rgba(1, 16, 44, .5)),  url(${ page.image.filename })` } : ``"
+    :style="page.image ? { background: `linear-gradient(0deg, rgba(1, 16, 44, .5), rgba(1, 16, 44, .5)),  url(${ imageUrl })` } : ``"
   >
     <div class="container">
       <article class="hidden md:block py-14">
@@ -28,6 +28,20 @@ export default {
     },
     page: {
       type: Object,
+    },
+  },
+  methods: {
+    transformImage(image, option) {
+      if (!image) return "";
+      if (!option) return image;
+      
+      let service = '/m/';
+      return image + service + option;
+    },
+  },
+  computed: {
+    imageUrl() {
+      return this.transformImage(this.page.image.filename, '1440x0/smart/');
     },
   },
 }
