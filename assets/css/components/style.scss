@@ -1,9 +1,36 @@
-.field{
-        width: 50%;
-        border: 2px solid rgba(0, 0, 0, 0);
-        outline: none;
-        background-color: black;
+.field-first-name{
+        width: 320px;
+        height: 60px;
+        border-radius: 0.5rem;
         padding: 0.5rem 1rem;
-        margin-bottom: 22px;
-        align-items: center;
-    }
+        margin-bottom: 30px;
+        margin-right: 25px;
+}
+.field-last-name {
+        width: 320px;
+        height: 60px;
+        border-radius: 0.375rem;
+        padding: 0.5rem 1rem;
+        margin-bottom: 30px;
+        
+}
+.field-e-mail {
+        width: 670px;
+        height: 60px;
+        border-radius: 0.375rem;
+        padding: 0.5rem 1rem;
+        margin-bottom: 30px; 
+}
+.field-message {
+        width: 670px;
+        height: 250px;
+        border-radius: 0.375rem;
+        padding: 0.5rem 1rem;
+        margin-bottom: 50px;
+}
+.contact-box {
+    align-items: center;
+}
+.btn {
+    align-items: center;
+}
