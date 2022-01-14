@@ -4,13 +4,15 @@
     class="pb-16 lg:pb-20 xl:pb-32 relative"
   > 
     <article 
-      class="container lg:flex gap-14 justify-between relative"
-      :class="{ 'lg:flex-row-reverse' : blok.reverse || reverse, 'background__highlight background__highlight--top' : blok.background_highlight_circle, 'background__highlight--left background__highlight--top' : blok.reverse || reverse  }"
+      class="container lg:flex gap-28 justify-between relative"
+      :class="{ 'lg:flex-row-reverse' : blok.reverse || reverse, 'background__highlight background__highlight--top' : blok.background_highlight_circle, 'background__highlight background__highlight--left background__highlight--top' : ( blok.reverse || reverse ) && blok.background_highlight_circle  }"
     >
-      <div class="w-full lg:w-1/2 lg:flex-1">
-        <h2 class="w-full pb-5">{{ blok.title }}</h2>
-        <div class="rich-text-renderer text-left">
-          <rich-text-renderer  :document="blok.description" />
+      <div class="w-full lg:w-1/2 lg:flex-1 lg:flex items-center">
+        <div>
+          <h2 class="w-full pb-5">{{ blok.title }}</h2>
+          <div class="rich-text-renderer text-left">
+            <rich-text-renderer :document="blok.description" />
+          </div>
         </div>
       </div>
       <figure
