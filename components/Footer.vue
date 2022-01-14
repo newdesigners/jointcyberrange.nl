@@ -38,25 +38,33 @@
           <ul class="font-conthrax text-14">
             <li class="pb-2.5">
               <a class="inline-flex items-center" href="" rel="noopener noreferrer" target="_blank">
-                <div class="w-8 h-8 bg-secondary rounded-full mr-2.5"></div>
+                <div class="w-8 h-8 bg-secondary rounded-full mr-2.5 flex items-center justify-center">
+                  <Resources class="w-1/2" type="icon-twitter" />
+                </div>
                 <span class="hidden md:block">Twitter</span>
               </a>
             </li>
             <li class="pb-2.5">
               <a class="inline-flex items-center" href="" rel="noopener noreferrer" target="_blank">
-                <div class="w-8 h-8 bg-secondary rounded-full mr-2.5"></div>
+                <div class="w-8 h-8 bg-secondary rounded-full mr-2.5 flex items-center justify-center">
+                  <Resources class="w-1/2" type="icon-linkedin" />
+                </div>
                 <span class="hidden md:block">LinkedIn</span>
               </a>
             </li>
             <li class="pb-2.5">
               <a class="inline-flex items-center" href="" rel="noopener noreferrer" target="_blank">
-                <div class="w-8 h-8 bg-secondary rounded-full mr-2.5"></div>
+                <div class="w-8 h-8 bg-secondary rounded-full mr-2.5 flex items-center justify-center">
+                  <Resources class="w-1/2" type="icon-email" />
+                </div>
                 <span class="hidden md:block">E-mail</span>
               </a>
             </li>
             <li class="pb-2.5">
               <a class="inline-flex items-center" href="" rel="noopener noreferrer" target="_blank">
-                <div class="w-8 h-8 bg-secondary rounded-full mr-2.5"></div>
+                <div class="w-8 h-8 bg-secondary rounded-full mr-2.5 flex items-center justify-center">
+                  <Resources class="w-3/5" type="status" />
+                </div>
                 <span class="hidden md:block">Status</span>
               </a>
             </li>
