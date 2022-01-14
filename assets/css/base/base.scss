@@ -29,12 +29,12 @@
   }
 
   body {
-    @apply relative text-white font-futura text-18 lg:text-24-body font-medium tracking-wider;
+    @apply relative text-white font-futura text-18 /*lg:text-24-body*/ font-medium tracking-wider;
     min-height: -webkit-fill-available;
   }
 
   p {
-    @apply text-white font-medium text-18 lg:text-24-body font-futura tracking-wider;
+    @apply text-white font-medium text-18 /*lg:text-24-body*/ font-futura tracking-wider;
   }
 
   a {

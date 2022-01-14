@@ -1,10 +1,10 @@
 <template>
   <div
     v-editable="blok"
-    class="pb-16 lg:pb-20 xl:pb-32 relative"
+    class="pb-16 lg:pb-24 relative"
   > 
     <article 
-      class="container lg:flex gap-28 justify-between relative"
+      class="container lg:flex gap-24 justify-between relative"
       :class="{ 'lg:flex-row-reverse' : blok.reverse || reverse, 'background__highlight background__highlight--top' : blok.background_highlight_circle, 'background__highlight background__highlight--left background__highlight--top' : ( blok.reverse || reverse ) && blok.background_highlight_circle  }"
     >
       <div class="w-full lg:w-1/2 lg:flex-1 lg:flex items-center">

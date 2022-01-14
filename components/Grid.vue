@@ -1,9 +1,10 @@
 <template>
   <div 
     v-editable="blok"
+    class="pb-16 lg:pb-24"
   >
     <div class="container">
-      <article class="py-10 lg:py-20 sm:w-4/5 mx-auto text-center">
+      <article class="sm:w-4/5 mx-auto text-center">
         <h2
           class="pb-10 lg:pb-14"
           v-if="blok.title"
