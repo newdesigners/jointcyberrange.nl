@@ -25,6 +25,7 @@
             class="w-full h-full object-cover"
             width="508"
             height="620"
+            quality="70"
             sizes="xs:100vw sm:100vw md:100vw"
             :modifiers="{ smart: true }"
             provider="storyblok"

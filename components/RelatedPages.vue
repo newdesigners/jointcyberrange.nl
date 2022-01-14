@@ -15,7 +15,7 @@
             <div
               v-if="p.content"
               class="w-full h-full bg-cover"
-              :style="p.content.image.filename ? { background: `linear-gradient(0deg, rgba(1, 16, 44, .5), rgba(1, 16, 44, .5)),  url(${ transformImage(p.content.image.filename) })` } : ``"
+              :style="p.content.image.filename ? { background: `linear-gradient(0deg, rgba(1, 16, 44, .5), rgba(1, 16, 44, .5)),  url('${ transformImage(p.content.image.filename) }')` } : ``"
             >
               <NuxtLink 
                 class="flex h-full items-center justify-center"
@@ -40,7 +40,7 @@ export default {
     },
   },
   methods: {
-    transformImage(image, option = '720x0/smart/') {
+    transformImage(image, option = '720x0/smart/filters:quality(50)') {
       if (!image) return "";
       if (!option) return image;
       

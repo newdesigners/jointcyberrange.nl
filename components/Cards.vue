@@ -22,9 +22,10 @@
                 :alt="card.image.alt"
               /> -->
               <NuxtImg
-                class="absolute top-0 left-0 bottom-0 right-0 w-full h-full"
+                class="absolute top-0 left-0 bottom-0 right-0 w-full h-full object-cover"
                 width="440"
                 height="355"
+                quality="60"
                 sizes="xs:100vw sm:100vw md:100vw lg:100vw"
                 :modifiers="{ smart: true }"
                 provider="storyblok"
