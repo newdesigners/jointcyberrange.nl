@@ -23,10 +23,11 @@
           :alt="blok.image.alt"
         /> -->
         <NuxtImg
-          class="w-full h-full object-fit"
-          width="555"
+          class="w-full h-full object-cover"
+          width="565"
           height="450"
-          sizes="xs:100vw sm:100vw md:100vw lg:100vw"
+          quality="70"
+          sizes="xs:100vw sm:100vw md:100vw lg:100vw xl:100vw"
           :modifiers="{ smart: true }"
           provider="storyblok"
           :src="blok.image.filename"

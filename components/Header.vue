@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full self-start z-10 delay-100 h-20 transition-height duration-500 ease-in-out sticky top-0 bg-blue-background overflow-hidden xl:overflow-visible" :class="{ 'h-screen' : isActive }">
+  <header class="w-full self-start z-50 delay-100 h-20 transition-height duration-500 ease-in-out sticky top-0 bg-blue-background overflow-hidden xl:overflow-visible" :class="{ 'h-screen' : isActive }">
     <div class="h-20 container flex justify-between flex-wrap xl:justify-start">
       <div class="h-20 py-2.5 w-full flex justify-between xl:w-initial">
         <NuxtLink to="/" @click.native="onClose">
