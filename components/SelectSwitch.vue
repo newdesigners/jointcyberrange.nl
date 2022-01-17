@@ -5,15 +5,15 @@
   >
     <article class="container">
       <div class="text-center">
-        <h2 class="font-futura-bold text-24 lg:text-32 pb-7 lg:pb-14">{{ blok.title }}</h2>
-        <p class="font-futura-bold text-24 lg:text-32 pb-8 lg:pb-16">{{ blok.inline_text }}</p>
+        <h2 class="font-futura-bold text-24 pb-7 lg:pb-10">{{ blok.title }}</h2>
+        <p class="font-futura-bold text-24 pb-8 lg:pb-10">{{ blok.inline_text }}</p>
         <aside class="flex justify-center pb-8 lg:pb-16 items-center gap-x-6">
-          <p class="font-futura-bold text-18 lg:text-32">{{ blok.option_left }}</p>
+          <p class="font-futura-bold text-18 lg:text-24">{{ blok.option_left }}</p>
           <label for="toggle-type" class="flex items-center cursor-pointer relative">
             <input type="checkbox" id="toggle-type" class="sr-only" v-model="isChecked">
-            <div class="toggle-bg bg-secondary border-2 border-secondary h-10 w-20 rounded-full relative"></div>
+            <div class="toggle-bg bg-secondary border-2 border-secondary h-7 w-[4rem] rounded-full relative"></div>
           </label>
-          <p class="font-futura-bold text-18 lg:text-32">{{ blok.option_right }}</p>
+          <p class="font-futura-bold text-18 lg:text-24">{{ blok.option_right }}</p>
         </aside>
         <div v-for="(c, i) in selectedTextImages" :key="c._uid">
           <article v-for="single in c.content" :key="single._uid">

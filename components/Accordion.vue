@@ -17,7 +17,7 @@
             class="flex gap-x-5 items-center justify-between pb-2.5 lg:pb-5 lg:w-11/12 lg:pl-8"
           >
             <h4
-              class="font-futura-bold text-20 lg:text-24 leading-normal flex-1"
+              class="font-futura-bold text-20 leading-normal flex-1"
               :class="{ 'text-green' : index === selected }"
             >
               {{ question.question }}
