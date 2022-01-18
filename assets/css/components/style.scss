@@ -5,6 +5,7 @@
         padding: 0.5rem 1rem;
         margin-bottom: 30px;
         margin-right: 25px;
+        color: black;
 }
 .field-last-name {
         width: 320px;
@@ -12,6 +13,7 @@
         border-radius: 0.375rem;
         padding: 0.5rem 1rem;
         margin-bottom: 30px;
+        color: black;
         
 }
 .field-e-mail {
@@ -20,6 +22,7 @@
         border-radius: 0.375rem;
         padding: 0.5rem 1rem;
         margin-bottom: 30px; 
+        color: black;
 }
 .field-message {
         width: 670px;
@@ -27,10 +30,12 @@
         border-radius: 0.375rem;
         padding: 0.5rem 1rem;
         margin-bottom: 50px;
+        color: black;
 }
 .contact-box {
     align-items: center;
 }
 .btn {
-    align-items: center;
+    display: inline-block;
+    margin: 0 auto;
 }

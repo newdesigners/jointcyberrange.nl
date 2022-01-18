@@ -5,7 +5,7 @@
       <p class="text-center w-full pb-20">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
    
 	<div class="flex">
-    <div class="style.scss">
+    <div class="style.scss mx-auto">
 			<div class="right">
 				<input class="field-first-name" placeholder="First Name">
 				<input class="field-last-name" placeholder="Last Name">
@@ -16,7 +16,7 @@
 				<textarea placeholder="Message" class="field-message"></textarea>
 			</div>
 			</div>
-			<div>
+			<div class="flex items-center">
 			<button class="btn">Submit</button>
 			</div>
 		</div>
