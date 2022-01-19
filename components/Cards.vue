@@ -16,11 +16,6 @@
               v-if="card.image.filename"
               class="mb-4 lg:mb-8 w-full relative after:block after:pb-[56.25%] xl:after:pb-[75%]"
             >
-              <!-- <img
-                class="absolute top-0 left-0 bottom-0 right-0 w-full h-full"
-                :src="card.image.filename"
-                :alt="card.image.alt"
-              /> -->
               <NuxtImg
                 class="absolute top-0 left-0 bottom-0 right-0 w-full h-full object-cover"
                 width="440"

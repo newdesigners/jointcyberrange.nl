@@ -1,6 +1,5 @@
 <template>
   <figure>
-    <!-- <img class="w-full h-auto" v-if="!dark" src="~/assets/images/logo/logo.png" alt="Logo of Joint Cyber Range" /> -->
     <NuxtImg
       v-if="!dark"
       class="w-full h-auto"
@@ -8,7 +7,6 @@
       src="/logo/logo.png"
       alt="Logo of Joint Cyber Range"
     />
-    <!-- <img class="w-full h-auto" v-else src="~/assets/images/logo/logo-dark.png" alt="Dark version logo of Joint Cyber Range" /> -->
     <NuxtImg
       v-else
       class="w-full h-auto"

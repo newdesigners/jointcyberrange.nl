@@ -5,7 +5,11 @@
   > 
     <article 
       class="container lg:flex gap-24 justify-between relative"
-      :class="{ 'lg:flex-row-reverse' : blok.reverse || reverse, 'background__highlight background__highlight--top' : blok.background_highlight_circle, 'background__highlight background__highlight--left background__highlight--top' : ( blok.reverse || reverse ) && blok.background_highlight_circle  }"
+      :class="{
+        'lg:flex-row-reverse' : blok.reverse || reverse,
+        'background__highlight background__highlight--top' : blok.background_highlight_circle,
+        'background__highlight background__highlight--left background__highlight--top' : ( blok.reverse || reverse ) && blok.background_highlight_circle 
+      }"
     >
       <div class="w-full lg:w-1/2 lg:flex-1 lg:flex items-center">
         <div>
@@ -19,11 +23,6 @@
         class="lg:w-1/2 xl:w-[565px] xl:min-h-[450px]"
         v-if="blok.image.filename"
       > 
-        <!-- <img
-          class="w-full h-full object-fit"
-          :src="blok.image.filename"
-          :alt="blok.image.alt"
-        /> -->
         <NuxtImg
           class="w-full h-full object-cover"
           width="565"
