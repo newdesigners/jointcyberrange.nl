@@ -3,7 +3,7 @@
     v-editable="blok"
     class="pb-5 lg:pb-10"
   >
-    <article class="container sm:w-3/4 lg:w-4/5 xl:w-11/12">
+    <article class="container sm:w-3/4 lg:w-4/5 xl:w-11/12 lg:max-h-[1120px]">
       <div
         v-for="item in blok.column"
         :key="item._uid"
