@@ -62,7 +62,6 @@ export default {
   },
   methods: {
     toggle() {
-      console.log('tt');
       this.isChecked = !this.isChecked;
     },
   },
