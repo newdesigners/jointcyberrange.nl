@@ -18,6 +18,7 @@
             class="w-full h-full object-cover"
             width="936"
             height="1056"
+            quality="70"
             sizes="xs:100vw sm:100vw md:100vw"
             :modifiers="{ smart: true }"
             provider="storyblok"
@@ -27,10 +28,10 @@
         </figure>
         <div class="w-full flex-1 pt-3 card__body">
           <h2 class="text-18 lg:text-32 text-green pb-2.5">{{ blok.name }}</h2>
-          <h3 class="break-words text-14 lg:text-20 sm:max-w-[22rem] lg:max-w-none">{{ blok.title }}</h3>
+          <h3 class="break-words text-14 lg:text-16 sm:max-w-[22rem] lg:max-w-none">{{ blok.title }}</h3>
         </div>
       </div>
-      <aside class="px-4 pt-8 lg:px-10 xl:pl-80 sm:pt-12 lg:pt-40 xl:pt-12">
+      <aside class="px-4 pt-8 lg:px-10 lg:pl-80 sm:pt-12 xl:pt-12">
         <article class="">
           <p class="pb-8">{{ blok.description }}</p>
           <q class="inline-block pb-8 text-16 lg:pb-10 lg:text-20 italic">{{ blok.quote }}</q>
