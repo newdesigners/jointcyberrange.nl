@@ -21,7 +21,7 @@
                 class="flex h-full items-center justify-center"
                 :to="p.full_slug"
               >
-                <h3 class="text-center inline-block uppercase text-36">{{ p.name }}</h3>
+                <h3 class="text-center inline-block uppercase text-24 lg:text-36 lg:w-4/5">{{ p.name }}</h3>
               </NuxtLink>
             </div>
           </li>

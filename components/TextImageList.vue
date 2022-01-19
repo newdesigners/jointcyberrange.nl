@@ -18,11 +18,6 @@
             v-if="item.image.filename"
             class="w-52 h-52 mb-5 md:mb-0"
           >
-            <!-- <img 
-              class="w-full h-full object-cover"
-              :src="item.image.filename"
-              alt="item.image.alt"
-            /> -->
             <NuxtImg
               class="w-full h-full object-cover"
               width="600"

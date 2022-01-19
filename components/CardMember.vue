@@ -9,11 +9,6 @@
           class="absolute left-0 -top-10 w-36 h-40 lg:w-[312px] lg:h-[352px] lg:-left-10 lg:-top-32"
           v-if="blok.image.filename"
         >
-          <!-- <img
-            class="w-full h-full object-cover"
-            :src="blok.image.filename"
-            :alt="blok.image.alt" 
-          /> -->
           <NuxtImg
             class="w-full h-full object-cover"
             width="936"
