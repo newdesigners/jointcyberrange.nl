@@ -86,7 +86,7 @@ module.exports = {
       },
       maxWidth: {
         'grid-icon-text': '14rem',
-        'grid-icon-text-icon-lg': '7rem',
+        'grid-icon-text-icon-lg': '6rem',
         'grid-icon-text-icon': '5rem',
       },
       height: {
