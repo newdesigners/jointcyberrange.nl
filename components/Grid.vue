@@ -4,7 +4,10 @@
     class="pb-16 lg:pb-24"
   >
     <div class="container">
-      <article class="sm:w-4/5 mx-auto text-center">
+      <article
+        class="sm:w-4/5 mx-auto text-center"
+        :class="{ 'max-w-[600px]' : blok.container_width === 'small' }"
+      >
         <h2
           class="pb-10 lg:pb-14"
           v-if="blok.title"
@@ -28,10 +31,25 @@
             </div>
             <figure 
               v-if="item.component === 'logo' && item.image.filename"
-              class="w-11/12"  
+              class="w-11/12"
             >
-              <img
+              <a 
+                v-if="item.link.url !== '' || item.link.cached_url !== ''"
+                :href="item.link.url"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  class="w-full h-full object-contain"
+                  :class="{ 'opacity-50 hover:opacity-100' : blok.hover_highlight }"
+                  :src="item.image.filename"
+                  :alt="item.image.alt"
+                />
+            </a>
+            <img
+                v-else
                 class="w-full h-full object-contain"
+                :class="{ 'opacity-50 hover:opacity-100' : blok.hover_highlight }"
                 :src="item.image.filename"
                 :alt="item.image.alt"
               />
