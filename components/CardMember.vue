@@ -31,7 +31,7 @@
           <h3 class="break-words text-14 lg:text-16 sm:max-w-[22rem] lg:max-w-none">{{ blok.title }}</h3>
         </div>
       </div>
-      <aside class="px-4 pt-8 lg:px-10 lg:pl-80 sm:pt-12 xl:pt-12">
+      <aside class="px-4 pt-8 lg:px-10 lg:pl-80 sm:pt-12 lg:pt-8">
         <article class="">
           <p class="pb-8">{{ blok.description }}</p>
           <q class="inline-block pb-8 text-16 lg:pb-10 lg:text-20 italic">{{ blok.quote }}</q>
