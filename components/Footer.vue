@@ -37,15 +37,15 @@
         <div>
           <ul class="font-conthrax text-14">
             <li class="pb-2.5">
-              <a class="inline-flex items-center" href="" rel="noopener noreferrer" target="_blank">
+              <a class="inline-flex items-center" href="https://www.youtube.com/channel/UCk1dZBLr9nyqyTNhp4eCn5w/" rel="noopener noreferrer" target="_blank">
                 <div class="w-8 h-8 bg-secondary rounded-full mr-2.5 flex items-center justify-center">
-                  <Resources class="w-1/2" type="icon-twitter" />
+                  <Resources class="w-1/2" type="icon-youtube" />
                 </div>
-                <span class="hidden md:block">Twitter</span>
+                <span class="hidden md:block">YouTube</span>
               </a>
             </li>
             <li class="pb-2.5">
-              <a class="inline-flex items-center" href="" rel="noopener noreferrer" target="_blank">
+              <a class="inline-flex items-center" href="https://www.linkedin.com/company/joint-cyber-range-nl/" rel="noopener noreferrer" target="_blank">
                 <div class="w-8 h-8 bg-secondary rounded-full mr-2.5 flex items-center justify-center">
                   <Resources class="w-1/2" type="icon-linkedin" />
                 </div>
@@ -53,17 +53,17 @@
               </a>
             </li>
             <li class="pb-2.5">
-              <a class="inline-flex items-center" href="" rel="noopener noreferrer" target="_blank">
+              <a class="inline-flex items-center" href="https://anchor.fm/ts101" rel="noopener noreferrer" target="_blank">
                 <div class="w-8 h-8 bg-secondary rounded-full mr-2.5 flex items-center justify-center">
-                  <Resources class="w-1/2" type="icon-email" />
+                  <Resources class="w-1/2" type="icon-spotify" />
                 </div>
-                <span class="hidden md:block">E-mail</span>
+                <span class="hidden md:block">Podcast</span>
               </a>
             </li>
             <li class="pb-2.5">
-              <a class="inline-flex items-center" href="" rel="noopener noreferrer" target="_blank">
+              <a class="inline-flex items-center" href="https://status.jointcyberrange.nl/" rel="noopener noreferrer" target="_blank">
                 <div class="w-8 h-8 bg-secondary rounded-full mr-2.5 flex items-center justify-center">
-                  <Resources class="w-3/5" type="status" />
+                  <Resources class="w-3/5" type="icon-dashboard" />
                 </div>
                 <span class="hidden md:block">Status</span>
               </a>
