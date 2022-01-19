@@ -1,3 +1,11 @@
 .rich-text-renderer {
     @apply pb-5 w-full;
+
+    b {
+        @apply font-futura-bold;
+    }
+
+    a {
+        @apply underline;
+    }
 }
