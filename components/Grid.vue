@@ -27,7 +27,7 @@
                 class="w-full pb-2.5 lg:pb-10 max-w-grid-icon-text-icon lg:max-w-grid-icon-text-icon-lg mx-auto"
                 :type="item.icon"
               />
-              <p class="text-white text-center break-words xl:text-36">{{ item.text }}</p>
+              <p class="text-white text-center break-words xl:text-24">{{ item.text }}</p>
             </div>
             <figure 
               v-if="item.component === 'logo' && item.image.filename"
@@ -40,7 +40,7 @@
                 target="_blank"
               >
                 <img
-                  class="w-full h-full object-contain"
+                  class="w-full h-full object-contain transition ease-out duration-300"
                   :class="{ 'opacity-50 hover:opacity-100' : blok.hover_highlight }"
                   :src="item.image.filename"
                   :alt="item.image.alt"
@@ -48,7 +48,7 @@
             </a>
             <img
                 v-else
-                class="w-full h-full object-contain"
+                class="w-full h-full object-contain transition ease-out duration-300"
                 :class="{ 'opacity-50 hover:opacity-100' : blok.hover_highlight }"
                 :src="item.image.filename"
                 :alt="item.image.alt"
