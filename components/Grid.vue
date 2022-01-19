@@ -34,7 +34,7 @@
               class="w-11/12"
             >
               <a 
-                v-if="item.link.url !== '' || item.link.cached_url !== ''"
+                v-if="item.link && (item.link.url !== '' || item.link.cached_url !== '')"
                 :href="item.link.url"
                 rel="noopener noreferrer"
                 target="_blank"
