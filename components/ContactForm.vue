@@ -39,7 +39,7 @@
               </textarea>
             </div>
           </div>
-          <div class="flex items-center">
+          <div class="flex justify-center">
             <button class="btn">Submit</button>
           </div>
         </form>
