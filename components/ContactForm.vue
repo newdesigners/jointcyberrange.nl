@@ -35,7 +35,7 @@
                 class="text-primary w-full py-4 px-5 rounded-md h-[200px]"
                 placeholder="Message"
                 name="message"
-                >
+              >
               </textarea>
             </div>
           </div>
