@@ -11,54 +11,38 @@
           data-netlify="true"
           action="/thank-you"
         >
-           <div class="right">
+          <input type="hidden" name="form-name" value="contact-form">
+          <div class="md:flex gap-x-8">
               <input
-                class="text-primary w-full py-4 px-5 rounded-md mb-4"
+                class="text-primary w-full py-4 px-5 rounded-md mb-4 md:mb-8"
                 name="first_name"
                 placeholder="First Name"
               />
               <input
-                class="text-primary w-full py-4 px-5 rounded-md mb-4"
+                class="text-primary w-full py-4 px-5 rounded-md mb-4 md:mb-8"
                 name="last_name"
                 placeholder="Last Name"
               />
-            </div>
-            <div>
-              <input 
-                class="text-primary w-full py-4 px-5 rounded-md mb-4" 
-                name="e-mail" 
-                placeholder="E-mail"
-              />
-            <div>
+          </div>
+          <div>
+            <input 
+              class="text-primary w-full py-4 px-5 rounded-md mb-4 md:mb-8" 
+              name="e-mail" 
+              placeholder="E-mail"
+            />
+            <div class="mb-6 md:mb-12">
               <textarea
-                class="text-primary w-full py-4 px-5 rounded-md mb-4 h-[200px]"
+                class="text-primary w-full py-4 px-5 rounded-md h-[200px]"
                 placeholder="Message"
                 name="message"
-              >
+                >
               </textarea>
             </div>
-            </div>
-            <div class="flex items-center">
-            <button class="btn">Submit</button>
-            </div>
-        </form>
-        <!-- <div class="flex">
-          <div class="mx-auto">
-            <div class="right">
-              <input class="field-first-name" placeholder="First Name">
-              <input class="field-last-name" placeholder="Last Name">
-            </div>
-            <div>
-              <input class="field-e-mail" placeholder="E-mail">
-            <div>
-              <textarea placeholder="Message" class="field-message"></textarea>
-            </div>
-            </div>
-            <div class="flex items-center">
-            <button class="btn">Submit</button>
-            </div>
           </div>
-        </div> -->
+          <div class="flex items-center">
+            <button class="btn">Submit</button>
+          </div>
+        </form>
       </div>
     </article>
   </div>
