@@ -17,6 +17,8 @@ module.exports = {
         'container-xl': "theme(container.padding.xl)",
         '31%': '31%',
         '32%': '32%',
+        '46%': '46%',
+        '47%': '47%',
         '48%': '48%',
         '49%': '49%',
         '60%': '60%',
@@ -28,10 +30,13 @@ module.exports = {
         white: '#FFFFFF',
         current: 'currentColor',
         primary: '#011333',
-        secondary: '#ED254E',
-        blue: '#6199FC',
-        green: '#61E786',
-        background: '#01102C',
+        secondary: '#ed254e',
+        blue: '#6199fc', // this is defined in the styleguide but it's not used anywhere
+        blue: {
+          DEFAULT: '#00b2ce',
+          background: '#01102c'
+        }, // this is not defined in the styleguide but only used for the download text
+        green: '#61e786',
       },
       fontFamily: {
         conthrax: [
@@ -41,6 +46,11 @@ module.exports = {
         ],
         futura: [
           'Futura Std',
+          'sans-serif',
+          'Arial',
+        ],
+        'futura-medium': [
+          'Futura Std Medium',
           'sans-serif',
           'Arial',
         ],
@@ -76,7 +86,7 @@ module.exports = {
       },
       maxWidth: {
         'grid-icon-text': '14rem',
-        'grid-icon-text-icon-lg': '9rem',
+        'grid-icon-text-icon-lg': '6rem',
         'grid-icon-text-icon': '5rem',
       },
       height: {
@@ -90,6 +100,8 @@ module.exports = {
       transitionProperty: {
         'height': 'height',
         'box-shadow': 'box-shadow',
+        'max-height': 'max-height',
+        
       },
       boxShadow: {
         'button': '0px 0px 35px 7px rgba(237, 37, 78, .8)',
@@ -104,7 +116,11 @@ module.exports = {
         '-30': '-30',
         '-40': '-40',
         '-50': '-50',
-      }
+      },
+      gridTemplateColumns: {
+        '2-192px': 'repeat(2, 192px)',
+        '3-192px': 'repeat(3, 192px)',
+      },
     },
     container: {
       padding: {
@@ -117,6 +133,7 @@ module.exports = {
     fill: theme => ({
       'white': theme('colors.white'),
       'primary': theme('colors.primary'),
+      'green': theme('colors.green'),
     }),
   },
   variants: {

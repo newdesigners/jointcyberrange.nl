@@ -1,9 +1,13 @@
 <template>
   <div 
     v-editable="blok"
+    class="pb-16 lg:pb-24"
   >
     <div class="container">
-      <article class="py-10 lg:py-20 sm:w-4/5 mx-auto text-center">
+      <article
+        class="sm:w-4/5 mx-auto text-center"
+        :class="{ 'max-w-[600px]' : blok.container_width === 'small' }"
+      >
         <h2
           class="pb-10 lg:pb-14"
           v-if="blok.title"
@@ -23,14 +27,29 @@
                 class="w-full pb-2.5 lg:pb-10 max-w-grid-icon-text-icon lg:max-w-grid-icon-text-icon-lg mx-auto"
                 :type="item.icon"
               />
-              <p class="text-white text-center break-words xl:text-36">{{ item.text }}</p>
+              <p class="text-white text-center break-words xl:text-24">{{ item.text }}</p>
             </div>
             <figure 
               v-if="item.component === 'logo' && item.image.filename"
-              class="w-11/12"  
+              class="w-11/12"
             >
-              <img
-                class="w-full h-full object-contain"
+              <a 
+                v-if="item.link && (item.link.url !== '' || item.link.cached_url !== '')"
+                :href="item.link.url"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <img
+                  class="w-full h-full object-contain transition ease-out duration-300"
+                  :class="{ 'opacity-50 hover:opacity-100' : blok.hover_highlight }"
+                  :src="item.image.filename"
+                  :alt="item.image.alt"
+                />
+            </a>
+            <img
+                v-else
+                class="w-full h-full object-contain transition ease-out duration-300"
+                :class="{ 'opacity-50 hover:opacity-100' : blok.hover_highlight }"
                 :src="item.image.filename"
                 :alt="item.image.alt"
               />

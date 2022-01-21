@@ -2,7 +2,7 @@
   <section>
     <component
       v-if="story.content.component"
-      :key="story.content._uid"
+      :key="story.content._uid" 
       :blok="story.content"
       :is="story.content.component"
     />
@@ -10,6 +10,8 @@
 </template>
 
 <script>
+import { createSEOMeta } from '~/assets/js/utils/seo.js';
+
 export default {
   data () {
     return {
@@ -45,6 +47,7 @@ export default {
     // Load the JSON from the API - loadig the home content (index page)
     return context.app.$storyapi.get(`cdn/stories/${ fullSlug }`, {
       version,
+      resolve_relations: 'related-pages.pages',
     }).then((res) => {
       return res.data;
     }).catch((res) => {
@@ -56,6 +59,21 @@ export default {
         context.error({ statusCode: res.response.status, message: res.response.data });
       }
     });
+  },
+  head() {
+    const url = this.story.full_slug;
+    const seo = this.story.content.seo;
+    
+    if(seo) {
+      const title = seo.title = seo.title ? seo.title : `Joint Cyber Range | ${ this.story.name }`;
+      return {
+        title,
+        meta: createSEOMeta({
+          url,
+          seo,
+        }),
+      };
+    }
   },
 };
 </script>

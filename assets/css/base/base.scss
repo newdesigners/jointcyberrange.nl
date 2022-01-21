@@ -7,7 +7,7 @@
   }
 
   html > body > #__nuxt > #__layout {
-    @apply overflow-hidden;
+    /*@apply overflow-hidden;*/
 
     > div {
       @apply flex flex-col min-h-screen;
@@ -25,16 +25,16 @@
     height: -webkit-fill-available;
     scroll-behavior: smooth;
     box-sizing: border-box;
-    @apply bg-background;
+    @apply bg-blue-background opacity-100;
   }
 
   body {
-    @apply relative text-white font-futura text-18 lg:text-24-body font-medium tracking-wider;
+    @apply relative text-white font-futura text-18 /*lg:text-24-body*/ font-medium tracking-wider;
     min-height: -webkit-fill-available;
   }
 
   p {
-    @apply text-white font-medium text-18 lg:text-24-body font-futura tracking-wider;
+    @apply text-white font-medium text-18 /*lg:text-24-body*/ font-futura tracking-wider;
   }
 
   a {

@@ -1,0 +1,18 @@
+@layer components {
+  .toggle-bg:after {
+    content: '';
+    @apply absolute top-1/2 left-0.5 bg-white rounded-full h-5 w-5 transition shadow-sm transform -translate-y-1/2;
+  }
+
+  input:checked + .toggle-bg:after {
+    @apply transform translate-x-[175%] -translate-y-1/2 border-white;
+  }
+
+  .toggle-label {
+    @apply opacity-40;
+
+    &--active {
+      @apply opacity-100;
+    }
+  }
+}
