@@ -12,7 +12,7 @@
               <ul class="hidden xl:block xl:pt-5 text-14">
                 <li class="pb-5"><NuxtLink to="/what-we-do">About JCR</NuxtLink></li>
                 <li class="pb-5"><NuxtLink to="/our-vision">Our vision</NuxtLink></li>
-                <li class="pb-5"><NuxtLink to="/what-is-a-cyber-range">What is a cyber range?</NuxtLink></li>
+                <li class="pb-5"><NuxtLink to="/what-is-cyber-range">What is cyber range?</NuxtLink></li>
               </ul>
             </li>
             <li class="pb-4 lg:pr-8">
