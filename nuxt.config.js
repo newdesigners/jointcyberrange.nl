@@ -18,9 +18,9 @@ export default {
       ...createSEOMeta({
         url: '',
         seo: {
-          title: 'Joint Cyber Range Hardcoded nuxt.config.js in createSEOMeta function',
-          og_image: 'preview image here',
-          twitter_image: 'preview image here',
+          title: 'Joint Cyber Range',
+          og_image: 'https://a.storyblok.com/f/137615/1200x630/bf8e0c899d/jcr-shared-image.png',
+          twitter_image: 'https://a.storyblok.com/f/137615/1200x630/bf8e0c899d/jcr-shared-image.png',
           description: 'nuxt.config.js default description',
         },
       }),

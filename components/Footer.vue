@@ -89,8 +89,9 @@
           </ul>
         </div>
       </section>
-      <aside class="w-full">
+      <aside class="w-full flex justify-between">
         <p class="font-conthrax text-12">© Joint Cyber Range {{ currentYear }}</p>
+        <img src="../assets/images/license/by-nc-sa.png">
       </aside>
     </article>
   </footer>
