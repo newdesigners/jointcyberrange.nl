@@ -12,21 +12,17 @@
         <li
           v-for="item in blok.column"
           :key="item._uid"
-          class="flex flex-col items-center text-center md:flex-row md:text-left md:gap-x-6 pb-10 lg:gap-x-12 lg:pb-20"
+          class="flex flex-col text-center md:flex-row md:text-left md:gap-x-6 pb-10 lg:gap-x-12 lg:pb-20"
         >
           <figure
             v-if="item.image.filename"
             class="w-52 h-52 mb-5 md:mb-0"
           >
-            <!-- <img 
-              class="w-full h-full object-cover"
-              :src="item.image.filename"
-              alt="item.image.alt"
-            /> -->
             <NuxtImg
               class="w-full h-full object-cover"
               width="600"
               height="600"
+              quality="70"
               sizes="xs:100vw sm:100vw"
               :modifiers="{ smart: true }"
               provider="storyblok"
@@ -35,8 +31,8 @@
             />
           </figure>
           <div class="flex-1">
-            <h3 class="font-futura-bold pb-5">{{ item.title }}</h3>
-            <p>{{ item.description }}</p>
+            <h3 class="font-futura-bold lg:text-24 pb-6">{{ item.title }}</h3>
+            <p class="max-w-[650px]">{{ item.description }}</p>
           </div>
         </li>
       </ul>

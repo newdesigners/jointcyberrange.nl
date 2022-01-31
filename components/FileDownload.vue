@@ -15,7 +15,7 @@
             v-if="file"
             :href="file.file.filename"
             download
-            class="font-futura-bold inline-block text-blue"
+            class="font-futura-bold inline-block text-blue hover:text-green"
           >
             Download
           </a>

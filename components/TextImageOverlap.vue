@@ -3,7 +3,7 @@
     v-editable="blok"
     class="pb-5 lg:pb-10"
   >
-    <article class="container sm:w-3/4 lg:w-4/5 xl:w-11/12">
+    <article class="container sm:w-3/4 lg:w-4/5 xl:w-11/12 lg:max-h-[1120px]">
       <div
         v-for="item in blok.column"
         :key="item._uid"
@@ -16,15 +16,11 @@
           v-if="item.image.filename"
           class="mb-16 h-56 lg:max-w-[508px] lg:w-47% lg:h-[620px]"
         >
-          <!-- <img
-            class="w-full h-full object-cover"
-            :src="item.image.filename"
-            alt="item.image.alt"
-          /> -->
           <NuxtImg
             class="w-full h-full object-cover"
             width="508"
             height="620"
+            quality="70"
             sizes="xs:100vw sm:100vw md:100vw"
             :modifiers="{ smart: true }"
             provider="storyblok"
